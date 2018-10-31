@@ -1,0 +1,11 @@
+<h1>Welcome to Task Manager</h1>
+
+<% @tasks.each do |task| %>
+  <li><%= link_to task.title, task_path(task)%></li>
+<% end %>
+
+<%= link_to "create task", new_task_path %>
+
+<%= link_to "update task", new_task_path %>
+
+<%= link_to "delete task", new_task_path %>
